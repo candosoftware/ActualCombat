@@ -3,22 +3,23 @@ public class selfDemo01 {
    private String name;
    private int age;
    public selfDemo01(){
-	  name = "΢ѧԷ";
+	  name = "微学苑";
 	  age = 3;
    }
    public static void main(String args[]){
-	   selfDemo01  obj = new selfDemo01();
-	   System.out.println("�����ǣ�" +obj.name+","+"�����ǣ�"+obj.age);
+	   selfDemo01  obj = new selfDemo01();  //实例化对象obj
+	   System.out.println("姓名是：" +obj.name+","+"年龄是："+obj.age);
+	   
    }
 }
 /*
-��������˳���ǣ�
-�����е��� 9 �У����ǳ������ڡ�
-Ȼ�����е��� 10 �У�����Ҫ new һ��Demo����Ҫ���� Demo �Ĺ��췽����
-�����е��� 5 �У�ע�⣺���ܺܶ��˾��ý�������Ӧ�����е� 6 ���ˣ�������ʼ��һ���࣬�����ȳ�ʼ���������ԡ�
-������е��� 2 �У�Ȼ���ǵ� 3 �С�
-���Գ�ʼ������󣬲Żص����췽����ִ������Ĵ��룬Ҳ���ǵ� 6 �С��� 7 �С�
-Ȼ���ǵ�8�У���ʾ new һ��Demoʵ����ɡ�
-Ȼ��ص� main ������ִ�е� 11 �С�
-Ȼ���ǵ� 12 �У�main����ִ����ϡ�
+基本运行顺序是：
+先运行到第 9 行，这是程序的入口。
+然后运行到第 10 行，这里要 new 一个Demo，就要调用 Demo 的构造方法。
+就运行到第 5 行，注意：可能很多人觉得接下来就应该运行第 6 行了，错！初始化一个类，必须先初始化它的属性。
+因此运行到第 2 行，然后是第 3 行。
+属性初始化完过后，才回到构造方法，执行里面的代码，也就是第 6 行、第 7 行。
+然后是第8行，表示 new 一个Demo实例完成。
+然后回到 main 方法中执行第 11 行。
+然后是第 12 行，main方法执行完毕。
 */
