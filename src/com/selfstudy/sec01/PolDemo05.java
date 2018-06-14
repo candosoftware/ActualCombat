@@ -32,7 +32,7 @@ public class PolDemo05 {
 		fun(new C()) ;	// 传递B的实例
 	}
 	public static void fun(A a){
-		a.fun1() ;		// 调用覆写父类中的fun1()方法
+		//a.fun1() ;		// 调用覆写父类中的fun1()方法
 	}
 
 	}
